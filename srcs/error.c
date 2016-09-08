@@ -6,7 +6,7 @@
 /*   By: cchampda <cchampda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/30 16:48:47 by cchampda          #+#    #+#             */
-/*   Updated: 2016/05/31 14:53:11 by cchampda         ###   ########.fr       */
+/*   Updated: 2016/09/08 16:18:19 by cchampda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	check_char(char c)
 {
-	if (ft_isdigit(c) || c == ' ' || c == '-')
+	if (ft_isdigit(c) || c == ' ' || c == '-' || c  == '+')
 		;
 	else
 		FDF_ERROR;
