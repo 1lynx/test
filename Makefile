@@ -6,7 +6,7 @@
 #    By: cchampda <cchampda@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/06 19:57:23 by cchampda          #+#    #+#              #
-#    Updated: 2016/09/08 16:16:50 by cchampda         ###   ########.fr        #
+#    Updated: 2016/09/08 16:21:05 by cchampda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,9 @@ norme:
 		@norminette $(INC)
 
 gpush:
+		@echo "\033[33m.Adding Modified Files on Git\033[0m"
 		@git add *
+		@echo "\033[33m.Commiting Files on Git\033[0m"
 		@git commit -m "`date +%d/%m-%Hh%M`"
+		@echo "\033[33m.Pushing Files on Git\033[0m"
 		@git push
